@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install API modules
+        uses: cypress-io/github-action@v6
+        with:
+          install-command: npm install
+          runTests: false
+      - name: Run API tests 🧪
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm start
+          command: npm test
