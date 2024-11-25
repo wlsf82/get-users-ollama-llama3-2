@@ -1,5 +1,7 @@
 # get-users-ollama-llama3-2
 
+[![main](https://github.com/wlsf82/get-users-ollama-llama3-2/actions/workflows/ci.yml/badge.svg)](https://github.com/wlsf82/get-users-ollama-llama3-2/actions)
+
 Sample project to experiment with Ollama and llama3.2 model.
 
 ## Pre-requirements
